@@ -3,6 +3,7 @@ import { PixelButton } from '@/app/components/UI';
 import { Heart, Shield, Sparkles, Sword, Trees } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -20,8 +21,8 @@ export const HeroSection = () => {
 
       {/* Floating Pixel Assets */}
       <div className="absolute inset-0 z-10 pointer-events-none">
-         {/* Treasure Chest */}
-         <motion.div 
+        {/* Treasure Chest */}
+        <motion.div
           animate={{ y: [0, -15, 0], rotate: [0, 2, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           className="absolute left-[5%] bottom-[15%] w-64 h-64 opacity-80"
@@ -60,11 +61,11 @@ export const HeroSection = () => {
               <Sparkles className="w-8 h-8 text-cyan-400" />
             </div>
           </div>
-          
+
           <h1 className="font-pixel text-5xl md:text-7xl lg:text-8xl text-[#f5e6be] tracking-tighter drop-shadow-[6px_6px_0_rgba(62,39,35,1)]">
             SPRITE<br />STRIKERS
           </h1>
-          
+
           <div className="mt-6 flex items-center justify-center gap-4">
             <div className="h-4 w-4 bg-[#8b5e3c] rotate-45" />
             <span className="font-pixel text-sm text-[#8b5e3c] uppercase tracking-[0.4em] font-bold">{t('hero.title')}</span>
@@ -77,20 +78,35 @@ export const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-8">
-          <PixelButton variant="wood" size="lg" className="min-w-[280px] text-lg uppercase">
-            {t('nav.play_now')}
-          </PixelButton>
-          <PixelButton variant="leaf" size="lg" className="min-w-[280px] text-lg uppercase">
-            SUPPORT HARVEST
-          </PixelButton>
+          <Link to="/play">
+            <PixelButton variant="wood" size="lg" className="min-w-[280px] text-lg uppercase">
+              {t('nav.play_now')}
+            </PixelButton>
+          </Link>
+
+          <a href="https://www.kickstarter.com/" target="_blank" rel="noopener noreferrer">
+            <PixelButton variant="leaf" size="lg" className="min-w-[280px] text-lg uppercase">
+              SUPPORT HARVEST
+            </PixelButton>
+          </a>
         </div>
 
-        <button className="mt-16 flex items-center gap-3 text-[#8b5e3c] font-pixel text-[12px] hover:text-[#f5e6be] transition-all uppercase tracking-[0.3em] group">
-          <Heart className="w-5 h-5 group-hover:fill-[#8b5e3c] transition-colors" />
+        <a
+          href="https://ko-fi.com/spritestrikers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-16 flex items-center gap-3 text-[#8b5e3c] font-pixel text-[12px] hover:text-[#f5e6be] transition-all uppercase tracking-[0.3em] group cursor-pointer"
+        >
+          <motion.div
+            whileHover={{ scale: 1.2, color: "#ef4444" }}
+            className="text-[#8b5e3c] group-hover:text-red-500 transition-colors"
+          >
+            <Heart className="w-5 h-5 fill-current" />
+          </motion.div>
           Offer Tribute
-        </button>
+        </a>
       </div>
-      
+
       {/* Roots Footer Decor */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#1b0d0a] to-transparent opacity-80" />
     </section>

@@ -1,5 +1,4 @@
 import { AdventurersLog } from '@/app/components/AdventurersLog';
-import { BestiaryPage, ChroniclesPage, LegendsPage, MapsPage } from '@/app/components/GamePages';
 import { HeroSection } from '@/app/components/HeroSection';
 import { TheGuildHall } from '@/app/components/TheGuildHall';
 import { PixelButton, ScanlineOverlay } from '@/app/components/UI';
@@ -8,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import '../i18n';
+import { BestiaryPage, ChroniclesPage, DownloadsPage, LegendsPage, MapsPage } from './components/pages';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -88,13 +88,11 @@ const App = () => {
             </div>
             <div className="flex gap-4 items-center">
               <LanguageSwitcher />
-              <PixelButton 
-                variant="wood" 
-                size="sm"
-                className="px-6 border-2"
-              >
-                {t('nav.play_now')}
-              </PixelButton>
+              <Link to="/play"> {/* <--- CAMBIO AQUÍ: Usar Link en vez de solo botón */}
+                <PixelButton variant="wood" size="sm" className="px-6 border-2">
+                  {t('nav.play_now')}
+                </PixelButton>
+              </Link>
             </div>
           </div>
         </nav>
@@ -130,6 +128,7 @@ const App = () => {
             <Route path="/bestiary" element={<BestiaryPage />} />
             <Route path="/maps" element={<MapsPage />} />
             <Route path="/legends" element={<LegendsPage />} />
+            <Route path="/play" element={<DownloadsPage />} />
           </Routes>
         </main>
 
