@@ -4,7 +4,7 @@ import { Bug, ImageIcon, Loader2, MessageSquare, Paperclip, Scroll, Trash2 } fro
 import { AnimatePresence, motion } from 'motion/react';
 import { useRef, useState } from 'react';
 import { toast } from 'sonner';
-import { ParchmentPanel, PixelButton } from '../../UI';
+import { ParchmentPanel, PixelButton } from '../atoms';
 
 const Tabs = [
   { id: 0, label: 'BETA TESTER ACCESS', icon: Scroll },

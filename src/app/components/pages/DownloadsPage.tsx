@@ -1,5 +1,5 @@
-import { ParchmentPanel, PixelButton } from '@/app/components/UI';
 import { Download, Gamepad2, Monitor, Smartphone, Terminal } from 'lucide-react';
+import { ParchmentPanel, PixelButton } from '../ui/atoms';
 
 export const DownloadsPage = () => {
   return (

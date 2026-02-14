@@ -1,5 +1,5 @@
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import { ParchmentPanel } from '../UI';
+import { ParchmentPanel } from '../ui/atoms';
 
 export const LegendsPage = () => (
   <section className="py-32 px-4 bg-[#1b0a0a] min-h-screen">

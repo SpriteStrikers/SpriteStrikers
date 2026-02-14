@@ -1,7 +1,7 @@
 import { Map } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import { ParchmentPanel, PixelButton } from '../UI';
+import { ParchmentPanel, PixelButton } from '../ui/atoms';
 
 export const MapsPage = () => (
   <section className="py-32 px-4 bg-[#0d131b] min-h-screen">

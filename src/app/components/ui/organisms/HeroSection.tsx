@@ -1,9 +1,9 @@
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
-import { PixelButton } from '@/app/components/UI';
 import { Heart, Shield, Sparkles, Sword, Trees } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { PixelButton } from '../atoms';
 
 export const HeroSection = () => {
   const { t } = useTranslation();

@@ -3,7 +3,7 @@ import { Crown, Feather, Loader2, Scroll, Shield, Sword, Wand2 } from 'lucide-re
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { ParchmentPanel, PixelButton } from '../../UI';
+import { ParchmentPanel, PixelButton } from '../atoms';
 
 const LogCategories = [
   { id: 'concept', label: 'Mythos & World Building', icon: Crown },

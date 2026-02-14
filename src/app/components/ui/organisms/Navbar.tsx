@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { PixelButton } from "../../UI";
+import { PixelButton } from "../atoms";
 import { LanguageSwitcher } from "../molecules/LanguageSwitcher";
 
 export const Navbar = () => {
