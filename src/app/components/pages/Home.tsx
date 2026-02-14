@@ -1,8 +1,6 @@
-import { motion } from "motion/react"
-import { useTranslation } from "react-i18next"
-import { AdventurersLog } from "../AdventurersLog"
-import { TheGuildHall } from "../TheGuildHall"
-import { HeroSection } from "../ui/organisms"
+import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+import { AdventurersLog, HeroSection, TheGuildHall } from "../ui/organisms";
 
 export const Home = () => {
   const { t } = useTranslation();
