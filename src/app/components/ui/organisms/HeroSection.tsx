@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from '@/app/components/ui/ImageWithFallback';
 import { Heart, Shield, Sparkles, Sword, Trees } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';

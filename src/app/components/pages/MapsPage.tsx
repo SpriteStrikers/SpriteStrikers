@@ -1,6 +1,6 @@
 import { Map } from 'lucide-react';
 import { motion } from 'motion/react';
-import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { ImageWithFallback } from '../ui/ImageWithFallback';
 import { ParchmentPanel, PixelButton } from '../ui/atoms';
 
 export const MapsPage = () => (

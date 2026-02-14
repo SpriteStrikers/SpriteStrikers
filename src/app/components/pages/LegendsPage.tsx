@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { ImageWithFallback } from '../ui/ImageWithFallback';
 import { ParchmentPanel } from '../ui/atoms';
 
 export const LegendsPage = () => (

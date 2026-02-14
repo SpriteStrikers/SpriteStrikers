@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { ImageWithFallback } from '../ui/ImageWithFallback';
 import { ParchmentPanel, PixelButton } from '../ui/atoms';
 
 export const ChroniclesPage = () => {
