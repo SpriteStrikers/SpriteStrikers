@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "chronicles": "CHRONICLES",
+    "bestiary": "BESTIARY",
+    "maps": "MAPS",
+    "legends": "LEGENDS",
+    "play_now": "PLAY NOW"
+  },
+  "hero": {
+    "title": "PIXEL CARDS, INFINITE TACTICS",
+    "subtitle": "Collect ancient spirits, forge your deck, and conquer the Wooden Realm in the ultimate retro-modern card battle experience."
+  },
+  "ticker": {
+    "status": "FOREST_STATUS: THRIVING",
+    "deck": "ANCIENT_DECK: LOADED",
+    "travelers": "ACTIVE_TRAVELERS: 12,482",
+    "mana": "MANA_SAP: STABLE"
+  },
+  "chronicles": {
+    "title": "THE ANCIENT CHRONICLES",
+    "subtitle": "Volume I: The Sprouting Era",
+    "first_strike": "The First Strike",
+    "history": "Before the age of the Great Drought, the forest was a sanctuary of infinite mana. The scrolls speak of the First Strike—a card battle that lasted seven moons and shaped the very roots of our world.",
+    "era1": "The Era of Saplings",
+    "era2": "The Shadow Rot War",
+    "era3": "Rise of the Card Lords",
+    "scribe": "Scribe New Entry"
+  },
+  "bestiary": {
+    "title": "FOREST BESTIARY",
+    "subtitle": "Classified Spirits and Entities"
+  },
+  "footer": {
+    "rights": "ALL RIGHTS RESERVED.",
+    "motto": "PIXELS BY HAND. TACTICS BY COLD LOGIC."
+  }
+}

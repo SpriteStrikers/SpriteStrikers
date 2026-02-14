@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "chronicles": "CRÓNICAS",
+    "bestiary": "BESTIARIO",
+    "maps": "MAPAS",
+    "legends": "LEYENDAS",
+    "play_now": "JUGAR AHORA"
+  },
+  "hero": {
+    "title": "CARTAS PIXEL, TÁCTICA INFINITA",
+    "subtitle": "Colecciona espíritus antiguos, forja tu mazo y conquista el Reino de Madera en la experiencia definitiva de batallas de cartas retro-modernas."
+  },
+  "ticker": {
+    "status": "ESTADO_BOSQUE: FLORECIENTE",
+    "deck": "MAZO_ANCESTRAL: CARGADO",
+    "travelers": "VIAJEROS_ACTIVOS: 12,482",
+    "mana": "SABIA_MANA: ESTABLE"
+  },
+  "chronicles": {
+    "title": "LAS CRÓNICAS ANTIGUAS",
+    "subtitle": "Volumen I: La Era del Brote",
+    "first_strike": "El Primer Golpe",
+    "history": "Antes de la era de la Gran Sequía, el bosque era un santuario de maná infinito. Los pergaminos hablan del Primer Golpe, una batalla de cartas que duró siete lunas y dio forma a las raíces mismas de nuestro mundo.",
+    "era1": "La Era de los Retoños",
+    "era2": "La Guerra de la Podredumbre",
+    "era3": "El Ascenso de los Señores de Cartas",
+    "scribe": "Escribir Nueva Entrada"
+  },
+  "bestiary": {
+    "title": "BESTIARIO DEL BOSQUE",
+    "subtitle": "Espíritus y Entidades Clasificadas"
+  },
+  "footer": {
+    "rights": "TODOS LOS DERECHOS RESERVADOS.",
+    "motto": "PIXELES A MANO. TÁCTICA POR LÓGICA FRÍA."
+  }
+}
