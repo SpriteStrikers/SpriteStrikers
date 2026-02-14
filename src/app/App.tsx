@@ -1,7 +1,7 @@
 import { AdventurersLog } from '@/app/components/AdventurersLog';
-import { CommunityOpsCenter } from '@/app/components/CommunityOpsCenter';
 import { BestiaryPage, ChroniclesPage, LegendsPage, MapsPage } from '@/app/components/GamePages';
 import { HeroSection } from '@/app/components/HeroSection';
+import { TheGuildHall } from '@/app/components/TheGuildHall';
 import { PixelButton, ScanlineOverlay } from '@/app/components/UI';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
@@ -121,7 +121,7 @@ const App = () => {
                   </motion.div>
                 </div>
 
-                <CommunityOpsCenter />
+                <TheGuildHall />
 
                 <AdventurersLog />
               </>
