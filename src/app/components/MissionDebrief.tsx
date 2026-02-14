@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { Crown, Shield, Sword, Wand2 } from 'lucide-react';
 import { motion } from 'motion/react';
-import { ParchmentPanel, PixelButton } from '@/app/components/UI';
-import { Axe, Trees, Flower2, Bird } from 'lucide-react';
+import { useState } from 'react';
+import { ParchmentPanel, PixelButton } from '../components/UI';
 
 const RatingRows = [
-  { id: 'concept', label: 'Ecosystem & Lore', icon: Trees },
-  { id: 'mechanics', label: 'Leaf Tactical Flow', icon: Axe },
-  { id: 'ui', label: 'Parchment Clarity', icon: Bird },
-  { id: 'art', label: 'Nature Tapestry Style', icon: Flower2 },
+  { id: 'concept', label: 'Mythos & World Building', icon: Crown },
+  { id: 'mechanics', label: 'Tactical Combat', icon: Sword },
+  { id: 'ui', label: 'Scribe UI & Navigation', icon: Shield },
+  { id: 'art', label: 'Pixel Tapestry Style', icon: Wand2 },
 ];
 
 export const MissionDebrief = () => {
@@ -55,16 +55,16 @@ export const MissionDebrief = () => {
                       onClick={() => handleRate(row.id, val)}
                       className="group relative flex-1 h-20 border-4 border-[#bca772] bg-[#dcc995] flex items-center justify-center transition-all hover:bg-[#efe5fd]"
                     >
-                      <Trees 
-                        className={`w-8 h-8 transition-all duration-300 ${
+                      <Sword 
+                        className={`w-6 h-6 transition-all duration-300 ${
                           ratings[row.id] >= val 
-                            ? 'text-[#2e7d32] fill-[#2e7d32]/20 filter drop-shadow-[0_4px_0_rgba(27,94,32,0.5)] scale-110' 
-                            : 'text-[#8b5e3c]/30'
+                            ? 'text-[#2e7d32] fill-[#2e7d32]/20 filter drop-shadow-[0_4px_0_rgba(27,94,32,0.5)] scale-110 -rotate-45' 
+                            : 'text-[#8b5e3c]/30 rotate-45'
                         } group-hover:scale-110`}
                       />
                       {ratings[row.id] === val && (
                         <motion.div 
-                          layoutId={`active-tree-${row.id}`}
+                          layoutId={`active-sword-${row.id}`}
                           className="absolute inset-0 border-4 border-[#8b5e3c] shadow-[inset_0_0_20px_rgba(139,94,60,0.2)]"
                         />
                       )}

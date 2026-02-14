@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { ParchmentPanel, PixelButton } from '@/app/components/UI';
 import { clsx } from 'clsx';
-import { Scroll, Bug, MessageSquare, Feather } from 'lucide-react';
+import { Bug, MessageSquare, Scroll } from 'lucide-react';
+import { AnimatePresence, motion } from 'motion/react';
+import { useState } from 'react';
 
 const Tabs = [
-  { id: 0, label: 'ENLISTMENT', icon: Feather },
-  { id: 1, label: 'FOREST GLITCHES', icon: Bug },
+  { id: 0, label: 'BETA TESTER ACCESS', icon: Scroll },
+  { id: 1, label: 'BUG REPORT & GLITCHES', icon: Bug },
   { id: 2, label: 'TAVERN WHISPERS', icon: MessageSquare },
 ];
 
@@ -74,6 +74,8 @@ const BetaTesterForm = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <FormField label="Traveler Identity" placeholder="e.g. Oak_Shield" />
       <FormField label="Discord Raven" placeholder="username#0000" />
+      <FormField label="Email" placeholder="traveler@guild.com" />
+      <FormField label="Steam User" placeholder="traveler" />
     </div>
     <div className="space-y-3">
       <label className="block font-pixel text-xs text-[#5d4037] uppercase font-bold">Favorite Forest Activity</label>
