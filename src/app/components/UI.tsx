@@ -1,7 +1,7 @@
-import React from 'react';
 import { clsx, type ClassValue } from 'clsx';
+import { motion, type HTMLMotionProps } from 'motion/react';
+import React from 'react';
 import { twMerge } from 'tailwind-merge';
-import { motion } from 'motion/react';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -50,9 +50,10 @@ export const ParchmentPanel = ({ children, className, variant = 'parchment', tit
   );
 };
 
-interface PixelButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface PixelButtonProps extends Omit<HTMLMotionProps<'button'>, 'children'> {
   variant?: 'wood' | 'leaf' | 'parchment';
   size?: 'sm' | 'md' | 'lg';
+  children: React.ReactNode;
 }
 
 export const PixelButton = ({ 
