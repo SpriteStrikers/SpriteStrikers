@@ -1,8 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import '../i18n';
-import { BestiaryPage, ChroniclesPage, DownloadsPage, LegendsPage, MapsPage } from './components/pages';
-import { Home } from './components/pages/Home';
+import { BestiaryPage, ChroniclesPage, DownloadsPage, Home, LegendsPage, MapsPage } from './components/pages';
 import { ScanlineOverlay } from './components/ui/atoms';
 import { Footer, Navbar } from './components/ui/organisms';
 
