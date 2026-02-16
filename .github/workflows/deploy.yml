@@ -12,6 +12,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,7 +27,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      # TRUCO PARA BROWSER ROUTER: Copiar index.html a 404.html
       - name: Fix for SPA
         run: cp dist/index.html dist/404.html
       - name: Setup Pages
@@ -35,8 +37,6 @@ jobs:
           path: './dist'
 
   deploy:
-    # Eliminamos la línea del environment si te sigue dando problemas, 
-    # GitHub lo gestionará automáticamente.
     runs-on: ubuntu-latest
     needs: build
     steps:
