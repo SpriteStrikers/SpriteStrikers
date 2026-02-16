@@ -8,7 +8,7 @@ import { Footer, Navbar } from './components/ui/organisms';
 const App = () => {
 
   return (
-    <Router basename="/SpriteStrikers">
+    <Router basename="/">
       <div className="min-h-screen bg-[#1b0d0a] text-[#f5e6be] selection:bg-[#8b5e3c] selection:text-[#f5e6be]">
         <Toaster
           position="top-center"
