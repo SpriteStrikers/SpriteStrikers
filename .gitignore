@@ -16,6 +16,9 @@ dist
 dist-ssr
 *.local
 
+## Supabase
+supabase/.temp/
+
 # Archivos de entorno (Seguridad: Aquí van tus claves API)
 .env
 .env.local
