@@ -18,8 +18,8 @@ export const Navbar = () => {
         <div className="hidden lg:flex gap-12 font-pixel text-[11px] text-[#a1887f]">
           <Link to="/chronicles" className="hover:text-[#f5e6be] transition-all tracking-[0.3em] font-bold">{t('nav.chronicles')}</Link>
           <Link to="/bestiary" className="hover:text-[#f5e6be] transition-all tracking-[0.3em] font-bold">{t('nav.bestiary')}</Link>
-          <Link to="/maps" className="hover:text-[#f5e6be] transition-all tracking-[0.3em] font-bold">{t('nav.maps')}</Link>
-          <Link to="/legends" className="hover:text-[#f5e6be] transition-all tracking-[0.3em] font-bold">{t('nav.legends')}</Link>
+          {/* <Link to="/maps" className="hover:text-[#f5e6be] transition-all tracking-[0.3em] font-bold">{t('nav.maps')}</Link> */}
+          {/* <Link to="/legends" className="hover:text-[#f5e6be] transition-all tracking-[0.3em] font-bold">{t('nav.legends')}</Link> */}
         </div>
         <div className="flex gap-4 items-center">
           <LanguageSwitcher />
