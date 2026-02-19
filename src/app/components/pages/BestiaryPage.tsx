@@ -15,43 +15,43 @@ export const BestiaryPage = () => {
     { 
       name: 'Aethel', 
       trait: 'Redención', 
-      description: 'Versátiles y determinados a reparar el daño causado por sus ancestros.', 
+      description: 'Una raza ingeniosa y valiente. Aunque cargan con el estigma de haber originado a los Injertados, ahora lideran el frente de batalla para redimir su legado.', 
       img: aethelImage 
     },
     { 
       name: 'Lumínicos', 
       trait: 'Estabilidad', 
-      description: 'Protectores de la naturaleza. Su magia es la más pura y estable frente a las grietas.', 
+      description: 'Seres de gracia ancestral en perfecta comunión con la naturaleza. Son los primeros en detectar la inestabilidad de los Etherials y los guardianes del conocimiento místico.', 
       img: luminicosImage
     },
     { 
       name: 'Ferals', 
       trait: 'Instinto', 
-      description: 'Guerreros instintivos. Su conexión física con Caelestis los hace rastreadores inigualables.', 
+      description: 'Guerreros mitad humano y mitad animal. Poseen instintos agudizados y una conexión física con la energía vital de Caelestis que los hace rastreadores implacables.', 
       img: feralsImage 
     },
     { 
       name: 'Scintilas', 
       trait: 'Artesanía', 
-      description: 'Maestros artesanos. Sin sus artilugos, ninguna raza podría contener el poder de los Ecos.', 
+      description: 'Pequeños en estatura pero gigantes en ingenio. Maestros de la herrería y creadores de los artilugos mágicos que permiten a las razas canalizar el poder de los Ecos.', 
       img: scintilasImage 
     },
     { 
       name: 'Etherials (Ecos)', 
       trait: 'Esencia', 
-      description: 'La esencia misma del mundo. Algunos han tomado forma física para defender su hogar.', 
+      description: 'Manifestaciones puras de poder elemental. Son el origen de la magia y las anclas que mantienen la realidad unida; ahora, su estabilidad depende de los Strikers.', 
       img: etherialsImage 
     },
     { 
       name: 'Colmena Vesper', 
       trait: 'Cordura', 
-      description: 'Visitantes trágicos. Luchan por recuperar su cordura en una realidad que se rompe.', 
+      description: 'Viajeros de otra realidad arrastrados por las grietas. La interferencia de los "Sprites" en su conexión mental los ha vuelto agresivos, convirtiéndolos en un peligro impredecible.', 
       img: '' 
     },
     { 
       name: 'Injertados', 
       trait: 'Corrupción', 
-      description: 'El enemigo. Aquellos que sacrificaron su humanidad por un poder que está devorando el mundo.', 
+      description: 'El oscuro espejo de la ambición. Seres biotecnológicos que sacrificaron su esencia natural para convertirse en parásitos de energía. Son el enemigo a vencer.', 
       img: '' 
     },
   ];

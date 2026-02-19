@@ -1,4 +1,4 @@
-import { Download, Gamepad2, Monitor, Smartphone, Terminal } from 'lucide-react';
+import { Download, Monitor, Smartphone, Terminal } from 'lucide-react';
 import { ParchmentPanel, PixelButton } from '../ui/atoms';
 
 export const DownloadsPage = () => {
@@ -18,43 +18,40 @@ export const DownloadsPage = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* PC VERSION CARD */}
           <PlatformCard 
             title="DESKTOP EDITION"
-            version="v0.4.2-ALPHA"
+            version="v0.1-ALPHA"
             icon={<Monitor className="w-12 h-12 text-[#f5e6be]" />}
-            description="The full experience. High fidelity sprites, keyboard shortcuts, and immersive audio."
+            /* description="The full experience. High fidelity sprites, keyboard shortcuts, and immersive audio." */
             requirements="Windows 10/11 • 4GB RAM"
-            downloadUrl="https://tusuario.itch.io/sprite-strikers-pc" // <--- TU LINK AQUÍ
+            downloadUrl="https://saultoscano.itch.io/sprite-strikers"
             variant="pc"
           />
 
-          {/* ANDROID VERSION CARD */}
           <PlatformCard 
             title="POCKET EDITION"
-            version="v0.4.2-MOBILE"
+            version="v0.1-MOBILE"
             icon={<Smartphone className="w-12 h-12 text-[#f5e6be]" />}
-            description="Take the forest with you. Optimized touch controls for tactical battles on the go."
-            requirements="Android 8.0+ • Snapdragon 660+"
-            downloadUrl="https://tusuario.itch.io/sprite-strikers-android" // <--- TU LINK AQUÍ
+            /* description="Take the forest with you. Optimized touch controls for tactical battles on the go." */
+            requirements="Android 5.0 or above"
+            downloadUrl="https://saultoscano.itch.io/sprite-strikers"
             variant="mobile"
           />
         </div>
 
         {/* WebGL Option (Optional) */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="font-pixel text-[10px] text-[#8b5e3c] mb-4">OR PLAY INSTANTLY IN BROWSER</p>
           <PixelButton variant="leaf" size="lg" className="mx-auto animate-pulse">
             <Gamepad2 className="w-5 h-5 mr-2" />
             LAUNCH WEB CLIENT
           </PixelButton>
-        </div>
+        </div> */}
       </div>
     </section>
   );
 };
 
-// Componente Tarjeta Reutilizable
 const PlatformCard = ({ title, version, icon, description, requirements, downloadUrl, variant }: any) => {
   const isPc = variant === 'pc';
   

@@ -13,14 +13,14 @@ export const Footer = () => {
         </h3>
 
         <p className="text-[#8b5e3c] font-pixel text-[10px] leading-relaxed mb-10 uppercase tracking-widest">
-          &copy; 2026 VOID PULSE STUDIOS. {t('footer.rights')}
+          &copy; 2026 SAULT STUDIOS. {t('footer.rights')}
           <br />
           <span className="text-[#5d4037] mt-2 block italic">
             "{t('footer.motto')}"
           </span>
         </p>
 
-        <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 font-pixel text-[11px] text-[#bca772]">
+        {/* <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 font-pixel text-[11px] text-[#bca772]">
           <a href="#" className="hover:text-[#f5e6be] transition-colors flex items-center gap-2 group">
             <span className="w-1.5 h-1.5 bg-[#8b5e3c] rotate-45 group-hover:bg-[#f5e6be] transition-colors" />
             TWITTER / X
@@ -33,7 +33,7 @@ export const Footer = () => {
             <span className="w-1.5 h-1.5 bg-[#8b5e3c] rotate-45 group-hover:bg-[#f5e6be] transition-colors" />
             STEAM
           </a>
-        </div>
+        </div> */}
 
         <div className="mt-12 flex justify-center items-center gap-4 opacity-30">
           <div className="h-1 w-12 bg-gradient-to-r from-transparent to-[#8b5e3c]" />
