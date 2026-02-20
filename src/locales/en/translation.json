@@ -64,23 +64,23 @@
     },
     "beta": {
       "fields": {
-        "identity": { "label": "Identidad del Viajero", "placeholder": "ej. Escudo_Roble" },
-        "discord": { "label": "Cuervo de Discord", "placeholder": "usuario#0000" },
-        "email": { "label": "Correo", "placeholder": "viajero@gremio.com" },
-        "steam": { "label": "Usuario de Steam", "placeholder": "viajero_id" },
-        "genre": { "label": "Género de Juego Favorito" }
+        "identity": { "label": "Traveler Identity", "placeholder": "e.g. Oak_Shield" },
+        "discord": { "label": "Discord", "placeholder": "username#0000" },
+        "email": { "label": "Email", "placeholder": "traveler@guild.com" },
+        "steam": { "label": "Steam User", "placeholder": "traveler_id" },
+        "genre": { "label": "Favorite Game Genre" }
       },
       "genres": [
-        "Cartas Tácticas y Deckbuilders",
+        "Card Battlers & Deckbuilders",
         "Action RPGs (Genshin Impact, Wuthering Waves)",
-        "MOBAs y Competitivos (League of Legends)",
-        "Gacha y RPGs Móviles (Guardian Tales, Fates)",
-        "Juegos de Pelea (BlazBlue)"
+        "MOBAs & Competitive (League of Legends)",
+        "Gacha & RPGs (Guardian Tales, Fates)",
+        "Fighting Games (BlazBlue)"
       ],
-      "btn": "JURAR LEALTAD A LAS RAÍCES",
+      "btn": "PLEDGE TO THE GUILD",
       "toast": {
-        "success": "¡Bienvenido al Gremio! Te invocaremos pronto.",
-        "error": "El registro del gremio está cerrado momentáneamente. Intenta de nuevo."
+        "success": "Welcome to the Guild! We shall summon you soon.",
+        "error": "The guild registry is closed momentarily. Try again."
       }
     },
     "bug": {
@@ -179,18 +179,76 @@
     }
   },
   "chronicles": {
-    "title": "THE ANCIENT CHRONICLES",
-    "subtitle": "Volume I: The Sprouting Era",
-    "first_strike": "The First Strike",
-    "history": "Before the age of the Great Drought, the forest was a sanctuary of infinite mana. The scrolls speak of the First Strike—a card battle that lasted seven moons and shaped the very roots of our world.",
-    "era1": "The Era of Saplings",
-    "era2": "The Shadow Rot War",
-    "era3": "Rise of the Card Lords",
-    "scribe": "Scribe New Entry"
+    "header": {
+      "title": "Awakening of the Strikers",
+      "subtitle": "Chronicles of Caelestis"
+    },
+    "main": {
+      "title": "Welcome to Caelestis",
+      "p1": "A world where harmony and color define the horizon. Here, civilization has not only advanced technologically but flourished through a mystical bond with the <strong>Echoes</strong>: astonishing creatures of pure energy capable of manifesting magic itself.",
+      "p2": "But peace is a fragile crystal. Thirsty for limitless power, factions of the Aethel race betrayed this ancient alliance, creating the <strong>Grafted</strong>: biotechnological beings born of a chaotic evolution.",
+      "p3": "Today, Caelestis is crumbling. The disappearance of the Echoes has fractured reality, opening dimensional rifts known as \"Sprites\".",
+      "btn": "JOIN THE ALLIANCE",
+      "caption": "Fragment recovered from the Luminal Era"
+    },
+    "fragments": {
+      "sprites": {
+        "title": "The Sprites",
+        "desc": "\"Anomalies that disrupt physical laws, pixelating and distorting everything in their path as reality fractures.\""
+      },
+      "grafted": {
+        "title": "The Grafted",
+        "desc": "\"Biotechnological aberrations born from forbidden experiments with Echoes kidnapped by the Aethel.\""
+      },
+      "strikers": {
+        "title": "The Strikers",
+        "desc": "\"The new legend: warriors and mercenaries who have stepped forward to save reality.\""
+      }
+    }
   },
   "bestiary": {
-    "title": "FOREST BESTIARY",
-    "subtitle": "Classified Spirits and Entities"
+    "header": {
+      "title": "Races of Caelestis",
+      "subtitle": "Guide to Alliances and Threats"
+    },
+    "btn": "Learn More",
+    "races": {
+      "aethel": {
+        "name": "Aethel",
+        "trait": "Redemption",
+        "desc": "An ingenious and brave race. Though they bear the stigma of having originated the Grafted, they now lead the battlefront to redeem their legacy."
+      },
+      "luminicos": {
+        "name": "Luminals",
+        "trait": "Stability",
+        "desc": "Beings of ancestral grace in perfect communion with nature. They are the first to detect the instability of the Etherials and are the guardians of mystical knowledge."
+      },
+      "ferals": {
+        "name": "Ferals",
+        "trait": "Instinct",
+        "desc": "Warriors half-human, half-animal. They possess heightened instincts and a physical connection to the vital energy of Caelestis, making them relentless trackers."
+      },
+      "scintilas": {
+        "name": "Scintilas",
+        "trait": "Craftsmanship",
+        "desc": "Small in stature but giants in ingenuity. Masters of blacksmithing and creators of the magical gadgets that allow the races to channel the power of the Echoes."
+      },
+      "etherials": {
+        "name": "Etherials (Echoes)",
+        "trait": "Essence",
+        "desc": "Pure manifestations of elemental power. They are the origin of magic and the anchors that hold reality together; now, their stability depends on the Strikers."
+      },
+      "vesper": {
+        "name": "Vesper Hive",
+        "trait": "Sanity",
+        "desc": "Travelers from another reality dragged through the rifts. The interference of the 'Sprites' in their mental connection has made them aggressive, turning them into an unpredictable danger."
+      },
+      "grafted": {
+        "name": "The Grafted",
+        "trait": "Corruption",
+        "desc": "The dark mirror of ambition. Biotechnological beings who sacrificed their natural essence to become energy parasites. They are the enemy to defeat."
+      }
+    }
   },
   "downloads": {
     "header": {

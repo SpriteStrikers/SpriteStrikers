@@ -64,23 +64,23 @@
     },
     "beta": {
       "fields": {
-        "identity": { "label": "Traveler Identity", "placeholder": "e.g. Oak_Shield" },
-        "discord": { "label": "Discord Raven", "placeholder": "username#0000" },
-        "email": { "label": "Email", "placeholder": "traveler@guild.com" },
-        "steam": { "label": "Steam User", "placeholder": "traveler_id" },
-        "genre": { "label": "Favorite Game Genre" }
+        "identity": { "label": "Identidad del Viajero", "placeholder": "ej. Escudo_Roble" },
+        "discord": { "label": "Discord", "placeholder": "usuario#0000" },
+        "email": { "label": "Correo", "placeholder": "viajero@gremio.com" },
+        "steam": { "label": "Usuario de Steam", "placeholder": "viajero_id" },
+        "genre": { "label": "Género de Juego Favorito" }
       },
       "genres": [
-        "Card Battlers & Deckbuilders",
+        "Cartas Tácticas y Deckbuilders",
         "Action RPGs (Genshin Impact, Wuthering Waves)",
-        "MOBAs & Competitive (League of Legends)",
-        "Gacha & RPGs (Guardian Tales, Fates)",
-        "Fighting Games (BlazBlue)"
+        "MOBAs y Competitivos (League of Legends)",
+        "Gacha y RPGs Móviles (Guardian Tales, Fates)",
+        "Juegos de Pelea (BlazBlue)"
       ],
-      "btn": "PLEDGE TO THE ROOTS",
+      "btn": "JURAR LEALTAD AL GREMIO",
       "toast": {
-        "success": "Welcome to the Guild! We shall summon you soon.",
-        "error": "The guild registry is closed momentarily. Try again."
+        "success": "¡Bienvenido al Gremio! Te invocaremos pronto.",
+        "error": "El registro del gremio está cerrado momentáneamente. Intenta de nuevo."
       }
     },
     "bug": {
@@ -179,18 +179,76 @@
     }
   },
   "chronicles": {
-    "title": "LAS CRÓNICAS ANTIGUAS",
-    "subtitle": "Volumen I: La Era del Brote",
-    "first_strike": "El Primer Golpe",
-    "history": "Antes de la era de la Gran Sequía, el bosque era un santuario de maná infinito. Los pergaminos hablan del Primer Golpe, una batalla de cartas que duró siete lunas y dio forma a las raíces mismas de nuestro mundo.",
-    "era1": "La Era de los Retoños",
-    "era2": "La Guerra de la Podredumbre",
-    "era3": "El Ascenso de los Señores de Cartas",
-    "scribe": "Escribir Nueva Entrada"
+    "header": {
+      "title": "El Despertar de los Strikers",
+      "subtitle": "Crónicas de Caelestis"
+    },
+    "main": {
+      "title": "Bienvenido a Caelestis",
+      "p1": "Un mundo donde la armonía y el color definen el horizonte. Aquí, la civilización no solo ha avanzado tecnológicamente, sino que ha florecido gracias a un vínculo místico con los <strong>Ecos</strong>: asombrosas criaturas de energía pura capaces de manifestar la magia misma.",
+      "p2": "Pero la paz es un cristal frágil. Sedientos de un poder sin límites, facciones de la raza Aethel traicionaron esta alianza ancestral, creando a los <strong>Injertados</strong>: seres biotecnológicos nacidos de una evolución caótica.",
+      "p3": "Hoy, Caelestis se desmorona. La desaparición de los Ecos ha fracturado la realidad, abriendo grietas dimensionales conocidas como \"Sprites\".",
+      "btn": "UNIRSE A LA ALIANZA",
+      "caption": "Fragmento recuperado de la Era Lumínica"
+    },
+    "fragments": {
+      "sprites": {
+        "title": "Los Sprites",
+        "desc": "\"Anomalías que perturban las leyes físicas, pixelando y distorsionando todo a su paso al fracturarse la realidad.\""
+      },
+      "grafted": {
+        "title": "Los Injertados",
+        "desc": "\"Aberraciones biotecnológicas nacidas de experimentos prohibidos con Ecos secuestrados por los Aethel.\""
+      },
+      "strikers": {
+        "title": "Los Strikers",
+        "desc": "\"La nueva leyenda: guerreros y mercenarios que han dado un paso al frente para salvar la realidad.\""
+      }
+    }
   },
   "bestiary": {
-    "title": "BESTIARIO DEL BOSQUE",
-    "subtitle": "Espíritus y Entidades Clasificadas"
+    "header": {
+      "title": "Razas de Caelestis",
+      "subtitle": "Guía de Alianzas y Amenazas"
+    },
+    "btn": "Conocer más",
+    "races": {
+      "aethel": {
+        "name": "Aethel",
+        "trait": "Redención",
+        "desc": "Una raza ingeniosa y valiente. Aunque cargan con el estigma de haber originado a los Injertados, ahora lideran el frente de batalla para redimir su legado."
+      },
+      "luminicos": {
+        "name": "Lumínicos",
+        "trait": "Estabilidad",
+        "desc": "Seres de gracia ancestral en perfecta comunión con la naturaleza. Son los primeros en detectar la inestabilidad de los Etherials y los guardianes del conocimiento místico."
+      },
+      "ferals": {
+        "name": "Ferals",
+        "trait": "Instinto",
+        "desc": "Guerreros mitad humano y mitad animal. Poseen instintos agudizados y una conexión física con la energía vital de Caelestis que los hace rastreadores implacables."
+      },
+      "scintilas": {
+        "name": "Scintilas",
+        "trait": "Artesanía",
+        "desc": "Pequeños en estatura pero gigantes en ingenio. Maestros de la herrería y creadores de los artilugos mágicos que permiten a las razas canalizar el poder de los Ecos."
+      },
+      "etherials": {
+        "name": "Etherials (Ecos)",
+        "trait": "Esencia",
+        "desc": "Manifestaciones puras de poder elemental. Son el origen de la magia y las anclas que mantienen la realidad unida; ahora, su estabilidad depende de los Strikers."
+      },
+      "vesper": {
+        "name": "Colmena Vesper",
+        "trait": "Cordura",
+        "desc": "Viajeros de otra realidad arrastrados por las grietas. La interferencia de los 'Sprites' en su conexión mental los ha vuelto agresivos, convirtiéndolos en un peligro impredecible."
+      },
+      "grafted": {
+        "name": "Injertados",
+        "trait": "Corrupción",
+        "desc": "El oscuro espejo de la ambición. Seres biotecnológicos que sacrificaron su esencia natural para convertirse en parásitos de energía. Son el enemigo a vencer."
+      }
+    }
   },
   "downloads": {
     "header": {
