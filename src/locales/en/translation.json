@@ -192,6 +192,21 @@
     "title": "FOREST BESTIARY",
     "subtitle": "Classified Spirits and Entities"
   },
+  "downloads": {
+    "header": {
+      "title": "THE ARMORY",
+      "subtitle": "Select Your Platform"
+    },
+    "desktop": {
+      "title": "DESKTOP EDITION",
+      "reqs": "Windows 10/11 • 4GB RAM"
+    },
+    "mobile": {
+      "title": "POCKET EDITION",
+      "reqs": "Android 5.0 or above"
+    },
+    "btn": "DOWNLOAD INSTALLER"
+  },
   "footer": {
     "rights": "ALL RIGHTS RESERVED.",
     "motto": "PIXELS BY HAND. TACTICS BY COLD LOGIC."

@@ -1,58 +1,53 @@
 import { Download, Monitor, Smartphone, Terminal } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { ParchmentPanel, PixelButton } from '../ui/atoms';
 
 export const DownloadsPage = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="min-h-screen py-32 px-4 bg-[#1b0d0a] relative flex items-center justify-center">
-      {/* Background Grid Style */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(139,94,60,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(139,94,60,0.1)_1px,transparent_1px)] bg-[length:40px_40px]" />
       
       <div className="max-w-5xl mx-auto relative z-10 w-full">
         <div className="text-center mb-16">
           <h2 className="font-pixel text-4xl md:text-5xl text-[#f5e6be] mb-4 drop-shadow-[4px_4px_0_#3e2723] tracking-tighter">
-            THE ARMORY
+            {t('downloads.header.title')}
           </h2>
           <p className="font-pixel text-xs text-[#8b5e3c] uppercase tracking-[0.4em]">
-            Select Your Platform
+            {t('downloads.header.subtitle')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <PlatformCard 
-            title="DESKTOP EDITION"
+            title={t('downloads.desktop.title')}
             version="v0.1-ALPHA"
             icon={<Monitor className="w-12 h-12 text-[#f5e6be]" />}
-            /* description="The full experience. High fidelity sprites, keyboard shortcuts, and immersive audio." */
-            requirements="Windows 10/11 • 4GB RAM"
+            /* description={t('downloads.desktop.desc')} */
+            requirements={t('downloads.desktop.reqs')}
             downloadUrl="https://saultoscano.itch.io/sprite-strikers"
             variant="pc"
+            buttonText={t('downloads.btn')}
           />
 
           <PlatformCard 
-            title="POCKET EDITION"
+            title={t('downloads.mobile.title')}
             version="v0.1-MOBILE"
             icon={<Smartphone className="w-12 h-12 text-[#f5e6be]" />}
-            /* description="Take the forest with you. Optimized touch controls for tactical battles on the go." */
-            requirements="Android 5.0 or above"
+            /* description={t('downloads.mobile.desc')} */
+            requirements={t('downloads.mobile.reqs')}
             downloadUrl="https://saultoscano.itch.io/sprite-strikers"
             variant="mobile"
+            buttonText={t('downloads.btn')}
           />
         </div>
-
-        {/* WebGL Option (Optional) */}
-        {/* <div className="mt-12 text-center">
-          <p className="font-pixel text-[10px] text-[#8b5e3c] mb-4">OR PLAY INSTANTLY IN BROWSER</p>
-          <PixelButton variant="leaf" size="lg" className="mx-auto animate-pulse">
-            <Gamepad2 className="w-5 h-5 mr-2" />
-            LAUNCH WEB CLIENT
-          </PixelButton>
-        </div> */}
       </div>
     </section>
   );
 };
 
-const PlatformCard = ({ title, version, icon, description, requirements, downloadUrl, variant }: any) => {
+const PlatformCard = ({ title, version, icon, description, requirements, downloadUrl, variant, buttonText }: any) => {
   const isPc = variant === 'pc';
   
   return (
@@ -82,7 +77,7 @@ const PlatformCard = ({ title, version, icon, description, requirements, downloa
         <a href={downloadUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
           <PixelButton variant={isPc ? 'leaf' : 'wood'} size="lg" className="w-full justify-center">
             <Download className="w-5 h-5 mr-2" />
-            DOWNLOAD INSTALLER
+            {buttonText}
           </PixelButton>
         </a>
       </div>

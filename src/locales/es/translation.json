@@ -192,6 +192,21 @@
     "title": "BESTIARIO DEL BOSQUE",
     "subtitle": "Espíritus y Entidades Clasificadas"
   },
+  "downloads": {
+    "header": {
+      "title": "LA ARMERÍA",
+      "subtitle": "Selecciona tu Plataforma"
+    },
+    "desktop": {
+      "title": "EDICIÓN PC",
+      "reqs": "Windows 10/11 • 4GB RAM"
+    },
+    "mobile": {
+      "title": "EDICIÓN DE BOLSILLO",
+      "reqs": "Android 5.0 o superior"
+    },
+    "btn": "DESCARGAR INSTALADOR"
+  },
   "footer": {
     "rights": "TODOS LOS DERECHOS RESERVADOS.",
     "motto": "PIXELES A MANO. TÁCTICA POR LÓGICA FRÍA."
