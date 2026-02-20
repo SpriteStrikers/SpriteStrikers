@@ -10,7 +10,7 @@ export const Navbar = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#3e2723]/95 backdrop-blur-md border-b-4 border-[#1b0d0a] px-6 py-5">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#3e2723]/95 backdrop-blur-md border-b-4 border-[#1b0d0a] px-6 py-2">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="font-pixel text-xl text-[#f5e6be] tracking-tighter flex items-center gap-4 hover:opacity-80 transition-opacity">
           <div className="w-60 h-20 flex items-center justify-center">

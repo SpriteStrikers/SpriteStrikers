@@ -1,9 +1,11 @@
 import { ImageWithFallback } from '@/app/components/ui/ImageWithFallback';
-import { Heart, Shield, Sparkles, Sword, Trees } from 'lucide-react';
+import { Heart, Shield, Sparkles, Star, Sword } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { PixelButton } from '../atoms';
+
+import LoadingImg from '@/assets/images/Loading_Resize.png';
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -19,28 +21,24 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#3e2723]/80 via-[#2e1a0a]/90 to-[#1b0d0a]" />
       </div>
 
-      {/* Floating Pixel Assets */}
       <div className="absolute inset-0 z-10 pointer-events-none">
-        {/* Treasure Chest */}
         <motion.div
           animate={{ y: [0, -15, 0], rotate: [0, 2, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           className="absolute left-[5%] bottom-[15%] w-64 h-64 opacity-80"
         >
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1709237104643-3e11922ce515?auto=format&fit=crop&q=80"
+            src={LoadingImg}
             alt="Treasure Chest"
             className="w-full h-full object-contain filter drop-shadow-[8px_8px_0_rgba(0,0,0,0.4)]"
           />
         </motion.div>
 
-        {/* Tree decoration elements */}
         <div className="absolute right-[10%] top-1/4 opacity-20">
-          <Trees className="w-32 h-32 text-emerald-900" />
+          <Star className="w-32 h-32 text-yellow-300" />
         </div>
       </div>
 
-      {/* Content */}
       <div className="relative z-20 flex flex-col items-center text-center max-w-4xl mx-auto">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -50,11 +48,9 @@ export const HeroSection = () => {
         >
           <div className="flex justify-center gap-6 mb-6">
             <div className="p-3 bg-[#5d4037] border-4 border-[#3e2723] rounded-lg shadow-[4px_4px_0_#1b0d0a]">
-              {/* <Axe className="w-8 h-8 text-[#efe5fd]" /> */}
               <Sword className="w-8 h-8 text-amber-500 animate-pulse" />
             </div>
             <div className="p-3 bg-[#5d4037] border-4 border-[#3e2723] rounded-lg shadow-[4px_4px_0_#1b0d0a]">
-              {/* <Compass className="w-8 h-8 text-[#43a047]" /> */}
               <Shield className="w-8 h-8 text-slate-400" />
             </div>
             <div className="p-3 bg-[#5d4037] border-4 border-[#3e2723] rounded-lg shadow-[4px_4px_0_#1b0d0a]">
@@ -86,7 +82,7 @@ export const HeroSection = () => {
 
           <a href="https://www.kickstarter.com/" target="_blank" rel="noopener noreferrer">
             <PixelButton variant="leaf" size="lg" className="min-w-[280px] text-lg uppercase">
-              SUPPORT HARVEST
+              {t('hero.green_button')}
             </PixelButton>
           </a>
         </div>
@@ -103,11 +99,10 @@ export const HeroSection = () => {
           >
             <Heart className="w-5 h-5 fill-current" />
           </motion.div>
-          Offer Tribute
+          {t('hero.heart_button')}
         </a>
       </div>
 
-      {/* Roots Footer Decor */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#1b0d0a] to-transparent opacity-80" />
     </section>
   );

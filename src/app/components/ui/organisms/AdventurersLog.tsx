@@ -1,22 +1,24 @@
 import { supabase } from '@/lib/supabase';
-import { Crown, Feather, Loader2, Scroll, Shield, Sword, Wand2 } from 'lucide-react'; // Agregué Scroll
+import { Crown, Feather, Loader2, Scroll, Shield, Sword, Wand2 } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 import { ParchmentPanel, PixelButton } from '../atoms';
 
-const LogCategories = [
-  { id: 'concept', label: 'Mythos & World Building', icon: Crown },
-  { id: 'mechanics', label: 'Tactical Combat', icon: Sword },
-  { id: 'ui', label: 'Scribe UI & Navigation', icon: Shield },
-  { id: 'art', label: 'Pixel Tapestry Style', icon: Wand2 },
-];
-
 export const AdventurersLog = () => {
+  const { t } = useTranslation();
   const [ratings, setRatings] = useState<Record<string, number>>({});
   const [comment, setComment] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  const LogCategories = [
+    { id: 'concept', label: t('log.categories.concept'), icon: Crown },
+    { id: 'mechanics', label: t('log.categories.mechanics'), icon: Sword },
+    { id: 'ui', label: t('log.categories.ui'), icon: Shield },
+    { id: 'art', label: t('log.categories.art'), icon: Wand2 },
+  ];
 
   const handleRate = (categoryId: string, value: number) => {
     setRatings(prev => ({ ...prev, [categoryId]: value }));
@@ -24,7 +26,7 @@ export const AdventurersLog = () => {
 
   const handleSubmit = async () => {
     if (Object.keys(ratings).length < LogCategories.length) {
-      toast.error("The chronicle is incomplete! All aspects must be recorded.");
+      toast.error(t('log.toast.incomplete'));
       return;
     }
 
@@ -46,10 +48,10 @@ export const AdventurersLog = () => {
 
     if (error) {
       console.error(error);
-      toast.error("Ink spilled... The entry could not be saved.");
+      toast.error(t('log.toast.error'));
     } else {
       setIsSuccess(true);
-      toast.success("Chronicle Sealed!");
+      toast.success(t('log.toast.success'));
     }
   };
 
@@ -59,13 +61,13 @@ export const AdventurersLog = () => {
 
       <div className="max-w-3xl mx-auto relative z-10 w-full">
         <h2 className="font-pixel text-3xl text-[#f5e6be] mb-4 text-center drop-shadow-[4px_4px_0_#3e2723]">
-          ADVENTURER'S LOG
+          {t('log.header.title')}
         </h2>
         <p className="font-pixel text-[10px] text-[#8b5e3c] mb-12 text-center uppercase tracking-[0.4em]">
-          Journey Chronicles
+          {t('log.header.subtitle')}
         </p>
 
-        <ParchmentPanel variant="parchment" title={isSuccess ? "JOURNEY ENDED" : "NEW ENTRY"}>
+        <ParchmentPanel variant="parchment" title={isSuccess ? t('log.panel.success_title') : t('log.panel.new_title')}>
           <AnimatePresence mode="wait">
             {isSuccess ? (
               <motion.div
@@ -79,15 +81,15 @@ export const AdventurersLog = () => {
                   <Feather className="w-12 h-12 text-[#f5e6be]" />
                 </div>
                 <div>
-                  <h3 className="font-pixel text-xl text-[#3e2723] mb-2">ENTRY RECORDED</h3>
-                  <p className="font-pixel text-xs text-[#5d4037]">Your tale has been written in the stars.</p>
+                  <h3 className="font-pixel text-xl text-[#3e2723] mb-2">{t('log.success.title')}</h3>
+                  <p className="font-pixel text-xs text-[#5d4037]">{t('log.success.desc')}</p>
                 </div>
                 <PixelButton variant="wood" onClick={() => {
                   setRatings({});
                   setComment('');
                   setIsSuccess(false);
                 }}>
-                  WRITE ANOTHER ENTRY
+                  {t('log.success.btn')}
                 </PixelButton>
               </motion.div>
             ) : (
@@ -148,7 +150,7 @@ export const AdventurersLog = () => {
                       <Scroll className="w-4 h-4 text-[#f5e6be]" />
                     </div>
                     <label className="font-pixel text-xs text-[#5d4037] uppercase font-bold tracking-tight">
-                      TALES FROM THE REALM (OPTIONAL)
+                      {t('log.form.comment_label')}
                     </label>
                   </div>
 
@@ -156,7 +158,7 @@ export const AdventurersLog = () => {
                     value={comment}
                     onChange={(e) => setComment(e.target.value)}
                     disabled={isSubmitting}
-                    placeholder="Describe your journey, brave traveler..."
+                    placeholder={t('log.form.comment_placeholder')}
                     className="w-full h-32 bg-[#dcc995]/50 border-4 border-[#bca772] p-4 
                              font-pixel text-sm text-[#3e2723] placeholder:text-[#8b5e3c]/50
                              focus:outline-none focus:border-[#8b5e3c] focus:bg-[#dcc995]
@@ -164,7 +166,7 @@ export const AdventurersLog = () => {
                   />
                   <div className="text-right">
                     <span className="font-pixel text-[10px] text-[#8b5e3c]/70">
-                      {comment.length} CHARS SCRIBED
+                      {comment.length} {t('log.form.chars_scribed')}
                     </span>
                   </div>
                 </div>
@@ -180,11 +182,11 @@ export const AdventurersLog = () => {
                     {isSubmitting ? (
                       <div className="flex items-center gap-3">
                         <Loader2 className="w-5 h-5 animate-spin" />
-                        <span>SCRIBING...</span>
+                        <span>{t('log.form.btn_loading')}</span>
                       </div>
                     ) : (
                       <span className="flex items-center gap-2">
-                        SEAL THE CHRONICLE <Feather className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                        {t('log.form.btn_submit')} <Feather className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                       </span>
                     )}
                   </PixelButton>

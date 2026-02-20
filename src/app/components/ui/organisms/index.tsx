@@ -1,4 +1,7 @@
 export * from './AdventurersLog';
+export * from './BetaTesterForm';
+export * from './BugReportForm';
+export * from './FeedbackForm';
 export * from './Footer';
 export * from './GuildFaqs';
 export * from './GuildGoals';

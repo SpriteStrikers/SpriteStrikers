@@ -7,14 +7,176 @@
     "play_now": "PLAY NOW"
   },
   "hero": {
-    "title": "PIXEL CARDS, INFINITE TACTICS",
-    "subtitle": "Collect ancient spirits, forge your deck, and conquer the Wooden Realm in the ultimate retro-modern card battle experience."
+    "title": "RESTORE REALITY",
+    "subtitle": "The Aethel's betrayal has begun to pixelate Caelestis. Become a Striker, forge an unbreakable deck, and seal the dimensional rifts in a Tactical Card Battler where every move counts.",
+    "green_button": "Support in Kickstarter",
+    "heart_button": "Support in Ko-fi"
   },
   "ticker": {
-    "status": "FOREST_STATUS: THRIVING",
-    "deck": "ANCIENT_DECK: LOADED",
-    "travelers": "ACTIVE_TRAVELERS: 12,482",
-    "mana": "MANA_SAP: STABLE"
+    "loading": "READING THE SCROLLS... // GATHERING MANA... // CONTACTING THE ETHERIALS... //",
+    "testers": "BETA TESTERS RECRUITED",
+    "funds": "CAMPAIGN FUNDS",
+    "bugs": "BUGS SQUASHED",
+    "lore": "LORE SCROLLS",
+    "supplies": "SUPPLY CHESTS"
+  },
+  "kickstarter": {
+    "header": {
+      "badge": "The Quest for Quality",
+      "title": "WHY WE NEED YOU",
+      "desc_start": "Sprite Strikers is a working prototype, but we want to turn it into a",
+      "desc_highlight": "Masterpiece",
+      "desc_end": "Your support on Kickstarter will make these critical upgrades a reality:"
+    },
+    "goals": {
+      "art": {
+        "title": "100% Human Art",
+        "subtitle": "Goodbye AI, Hello Soul",
+        "desc": "100% of the funds will go to real Pixel Art artists. We will replace every placeholder with hand-animated sprites, full of personality and detail."
+      },
+      "cards": {
+        "title": "Expanded Grimoire",
+        "subtitle": "Strategic Depth",
+        "desc": "We will take the game from 50 to over 150 unique cards at launch. More factions, more archetypes, and complex mechanics that require expert balancing."
+      },
+      "music": {
+        "title": "Epic Soundtrack",
+        "subtitle": "Original Symphony",
+        "desc": "No generic music. We will hire composers to create dynamic orchestral themes that shift based on the intensity of the battle."
+      },
+      "ui": {
+        "title": "Elite UI/UX",
+        "subtitle": "Crystal Clear & Juicy",
+        "desc": "A fully redesigned interface from the ground up: smart tooltips, impact animations ('Juice'), gamepad support, and total accessibility."
+      }
+    },
+    "footer_badge": "And much more on the way..."
+  },
+  "guild": {
+    "header": {
+      "title": "THE GUILD HALL",
+      "subtitle": "Community & Support"
+    },
+    "tabs": {
+      "beta": "BETA TESTER ACCESS",
+      "bug": "BUG REPORT & GLITCHES",
+      "feedback": "TAVERN WHISPERS"
+    },
+    "beta": {
+      "fields": {
+        "identity": { "label": "Identidad del Viajero", "placeholder": "ej. Escudo_Roble" },
+        "discord": { "label": "Cuervo de Discord", "placeholder": "usuario#0000" },
+        "email": { "label": "Correo", "placeholder": "viajero@gremio.com" },
+        "steam": { "label": "Usuario de Steam", "placeholder": "viajero_id" },
+        "genre": { "label": "Género de Juego Favorito" }
+      },
+      "genres": [
+        "Cartas Tácticas y Deckbuilders",
+        "Action RPGs (Genshin Impact, Wuthering Waves)",
+        "MOBAs y Competitivos (League of Legends)",
+        "Gacha y RPGs Móviles (Guardian Tales, Fates)",
+        "Juegos de Pelea (BlazBlue)"
+      ],
+      "btn": "JURAR LEALTAD A LAS RAÍCES",
+      "toast": {
+        "success": "¡Bienvenido al Gremio! Te invocaremos pronto.",
+        "error": "El registro del gremio está cerrado momentáneamente. Intenta de nuevo."
+      }
+    },
+    "bug": {
+      "fields": {
+        "summary": { "label": "Rot Summary", "placeholder": "Where did the wood decay?" },
+        "steps": { "label": "Steps to Reproduce (Ink it down)", "placeholder": "1. Walk near the elder tree...\n2. Open the parchment...\n3. The leaves fall!" },
+        "specs": { "label": "Wagon Specs", "placeholder": "RAM, GPU, Browser, OS" },
+        "evidence": "Evidence (Optional - Max 1MB)"
+      },
+      "attach_btn": "CLICK TO ATTACH A SKETCH",
+      "btn": "SEND THE RAVEN",
+      "btn_loading": "SENDING RAVEN...",
+      "toast": {
+        "invalid_type": "That's not a sketch! Only images allowed.",
+        "too_heavy": "Too heavy for the raven! Max size is 1MB.",
+        "upload_failed": "Failed to upload the sketch.",
+        "success": "Bug Report Scribed! Our blacksmiths are on it.",
+        "error": "The raven got lost in the storm. Try again."
+      }
+    },
+    "feedback": {
+      "label": "Tavern Wisdom & Visions",
+      "placeholder": "Share your stories, feature ideas, or feedback for the future of the forest...",
+      "btn": "SHARE WISDOM",
+      "toast": {
+        "success": "Wisdom shared with the elders!",
+        "error": "Your whisper faded away..."
+      }
+    }
+  },
+  "stats": {
+    "loading": "Loading Kingdom Statistics...",
+    "title": "GUILD STATISTICS",
+    "goals": {
+      "supplies": "Supply Chests (Ko-fi)",
+      "kickstarter": "Kickstarter Campaign (Pre-Launch)",
+      "testers": "Beta Testers Recruited",
+      "lore": "Lore Scrolls (Comments)",
+      "bugs": "Bugs Squashed"
+    }
+  },
+  "log": {
+    "header": {
+      "title": "ADVENTURER'S LOG",
+      "subtitle": "Journey Chronicles"
+    },
+    "panel": {
+      "new_title": "NEW ENTRY",
+      "success_title": "JOURNEY ENDED"
+    },
+    "categories": {
+      "concept": "Mythos & World Building",
+      "mechanics": "Tactical Combat",
+      "ui": "Scribe UI & Navigation",
+      "art": "Pixel Tapestry Style"
+    },
+    "form": {
+      "comment_label": "TALES FROM THE REALM (OPTIONAL)",
+      "comment_placeholder": "Describe your journey, brave traveler...",
+      "chars_scribed": "CHARS SCRIBED",
+      "btn_loading": "SCRIBING...",
+      "btn_submit": "SEAL THE CHRONICLE"
+    },
+    "success": {
+      "title": "ENTRY RECORDED",
+      "desc": "Your tale has been written in the stars.",
+      "btn": "WRITE ANOTHER ENTRY"
+    },
+    "toast": {
+      "incomplete": "The chronicle is incomplete! All aspects must be recorded.",
+      "error": "Ink spilled... The entry could not be saved.",
+      "success": "Chronicle Sealed!"
+    }
+  },
+  "faqs": {
+    "title": "KNOWLEDGE SCROLLS",
+    "q1": {
+      "question": "Will Sprite Strikers use AI-generated art?",
+      "answer": "No. The final release of Sprite Strikers will not contain any AI-generated content. The current assets are strictly placeholders used to convey the visual direction we aim to achieve with human artists."
+    },
+    "q2": {
+      "question": "When will Sprite Strikers be released?",
+      "answer": "The game will be released regardless, but the final quality, scope, and development speed will heavily depend on the success of our crowdfunding campaign."
+    },
+    "q3": {
+      "question": "Can I support the game outside of Kickstarter?",
+      "answer": "Yes! You can buy us a coffee (direct donation) through our Ko-fi page here: <a href='https://ko-fi.com/spritestrikers' target='_blank' class='text-amber-700 underline hover:text-amber-500'>Our Ko-fi Page</a>."
+    },
+    "q4": {
+      "question": "Can I contribute in non-monetary ways?",
+      "answer": "Absolutely! You can help us immensely by sharing the project with your friends, applying to be a Beta Tester, or simply sending us your feedback and reviews through our Guild forms."
+    },
+    "q5": {
+      "question": "I am an artist or musician and want to offer my services, how can I do that?",
+      "answer": "You can use the 'Tavern Whispers' form just above, or send a raven directly to our email: <a href='mailto:sprite.strikers@gmail.com' class='text-amber-700 underline hover:text-amber-500'>sprite.strikers@gmail.com</a>."
+    }
   },
   "chronicles": {
     "title": "THE ANCIENT CHRONICLES",

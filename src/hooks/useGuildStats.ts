@@ -8,8 +8,8 @@ export const useGuildStats = () => {
     pledged: 0,
     bugs: 0,
     comments: 0,
-    kickstarterGoal: 10000, // Meta monetaria ejemplo
-    coffeeGoal: 100 // Meta de cafés ejemplo
+    kickstarterGoal: 10000,
+    coffeeGoal: 100
   });
   const [loading, setLoading] = useState(true);
 
@@ -32,7 +32,6 @@ export const useGuildStats = () => {
           .select('*', { count: 'exact', head: true });
 
         // 4. Traer datos externos (Ko-fi / Kickstarter)
-        // Nota: Debes crear una tabla 'project_stats' con una fila única
         const { data: externalStats } = await supabase
           .from('project_stats')
           .select('kofi_count, kickstarter_pledged')
@@ -44,7 +43,7 @@ export const useGuildStats = () => {
           comments: comments || 0,
           coffees: externalStats?.kofi_count || 0,
           pledged: externalStats?.kickstarter_pledged || 0,
-          kickstarterGoal: 50000, // Tu meta real
+          kickstarterGoal: 50000,
           coffeeGoal: 200
         });
       } catch (error) {

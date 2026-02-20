@@ -13,7 +13,7 @@ export const Footer = () => {
         </h3>
 
         <p className="text-[#8b5e3c] font-pixel text-[10px] leading-relaxed mb-10 uppercase tracking-widest">
-          &copy; 2026 SAULT STUDIOS. {t('footer.rights')}
+          &copy; 2026 ROOKNOXX STUDIOS. {t('footer.rights')}
           <br />
           <span className="text-[#5d4037] mt-2 block italic">
             "{t('footer.motto')}"

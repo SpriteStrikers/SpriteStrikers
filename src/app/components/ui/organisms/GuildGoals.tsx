@@ -1,22 +1,24 @@
 import { useGuildStats } from "@/hooks/useGuildStats"; // Importa tu nuevo hook
 import { Bug, Coffee, Feather, Flame, Target } from "lucide-react";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 import { ParchmentPanel } from "../atoms";
 
 export const GuildGoals = () => {
+  const { t } = useTranslation();
   const { stats, loading } = useGuildStats();
 
   // Definimos las metas dinámicamente usando los datos del hook
   const goals = [
     { 
-      title: "Cofres de Suministros (Ko-fi)", 
+      title: t('stats.goals.supplies'), 
       current: stats.coffees, 
       total: stats.coffeeGoal, 
       icon: <Coffee className="size-4 text-amber-600" />,
       color: "#d97706" // Amber
     },
     { 
-      title: "Campaña Kickstarter (Pre-Lanzamiento)", 
+      title: t('stats.goals.kickstarter'), 
       current: stats.pledged, 
       total: stats.kickstarterGoal, 
       prefix: "$",
@@ -24,21 +26,21 @@ export const GuildGoals = () => {
       color: "#ef4444" // Red
     },
     { 
-      title: "Beta Testers Reclutados", 
+      title: t('stats.goals.testers'), 
       current: stats.testers, 
       total: 100, // Meta fija de testers
       icon: <Target className="size-4 text-emerald-500" />,
       color: "#10b981" // Emerald
     },
     { 
-      title: "Pergaminos de Lore (Comentarios)", 
+      title: t('stats.goals.lore'), 
       current: stats.comments, 
       total: 50, // Meta de participación
       icon: <Feather className="size-4 text-blue-400" />,
       color: "#3b82f6" // Blue
     },
     { 
-      title: "Bugs Aplastados", 
+      title: t('stats.goals.bugs'), 
       current: stats.bugs, 
       total: 20, // Meta interna de limpieza
       icon: <Bug className="size-4 text-purple-500" />,
@@ -46,13 +48,13 @@ export const GuildGoals = () => {
     },
   ];
 
-  if (loading) return <div className="py-20 text-center font-pixel text-[#8b5e3c]">Cargando estadísticas del Reino...</div>;
+  if (loading) return <div className="py-20 text-center font-pixel text-[#8b5e3c]">{t('stats.loading')}</div>;
 
   return (
     <section className="py-20 px-4 bg-[#1b0d0a]">
       <div className="max-w-4xl mx-auto">
         <h2 className="font-pixel text-3xl text-[#f5e6be] text-center mb-12 drop-shadow-[4px_4px_0_#3e2723]">
-          ESTADÍSTICAS DEL GREMIO
+          {t('stats.title')}
         </h2>
         
         <div className="grid gap-6">

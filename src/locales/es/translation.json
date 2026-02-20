@@ -7,14 +7,176 @@
     "play_now": "JUGAR AHORA"
   },
   "hero": {
-    "title": "CARTAS PIXEL, TÁCTICA INFINITA",
-    "subtitle": "Colecciona espíritus antiguos, forja tu mazo y conquista el Reino de Madera en la experiencia definitiva de batallas de cartas retro-modernas."
+    "title": "RESTABLECE LA REALIDAD",
+    "subtitle": "La traición de los Aethel ha comenzado a pixelar a Caelestis. Conviértete en un Striker, forja un mazo inquebrantable y cierra las grietas dimensionales en un juego de cartas tactico donde cada movimiento cuenta.",
+    "green_button": "Patrocina en Kickstarter",
+    "heart_button": "Patrocina en Ko-fi"
   },
   "ticker": {
-    "status": "ESTADO_BOSQUE: FLORECIENTE",
-    "deck": "MAZO_ANCESTRAL: CARGADO",
-    "travelers": "VIAJEROS_ACTIVOS: 12,482",
-    "mana": "SABIA_MANA: ESTABLE"
+    "loading": "LEYENDO LOS PERGAMINOS... // REUNIENDO MANÁ... // CONTACTANDO A LOS ETHERIALS... //",
+    "testers": "BETA TESTERS RECLUTADOS",
+    "funds": "FONDOS DE CAMPAÑA",
+    "bugs": "BUGS APLASTADOS",
+    "lore": "PERGAMINOS DE LORE",
+    "supplies": "COFRES DE SUMINISTROS"
+  },
+  "kickstarter": {
+    "header": {
+      "badge": "La Búsqueda de la Calidad",
+      "title": "¿POR QUÉ TE NECESITAMOS?",
+      "desc_start": "Sprite Strikers es un prototipo funcional, pero queremos convertirlo en una",
+      "desc_highlight": "Obra Maestra",
+      "desc_end": "Tu apoyo en Kickstarter hará posible estas mejoras críticas:"
+    },
+    "goals": {
+      "art": {
+        "title": "Arte 100% Humano",
+        "subtitle": "Adiós IA, Hola Alma",
+        "desc": "El 100% de los fondos irán a artistas de Pixel Art reales. Reemplazaremos cada placeholder con sprites animados a mano, llenos de personalidad y detalle."
+      },
+      "cards": {
+        "title": "Grimorio Expandido",
+        "subtitle": "Profundidad Estratégica",
+        "desc": "Llevaremos el juego de 50 a más de 150 cartas únicas al lanzamiento. Más facciones, más arquetipos y mecánicas complejas que requieren balanceo experto."
+      },
+      "music": {
+        "title": "Banda Sonora Épica",
+        "subtitle": "Sinfonía Original",
+        "desc": "Nada de música genérica. Contrataremos compositores para crear temas orquestales dinámicos que cambien según la intensidad de la batalla."
+      },
+      "ui": {
+        "title": "UI/UX de Élite",
+        "subtitle": "Cristalino y Jugoso",
+        "desc": "Una interfaz rediseñada desde cero: tooltips inteligentes, animaciones de impacto ('Juice'), soporte para gamepad y accesibilidad total."
+      }
+    },
+    "footer_badge": "Y mucho más en el camino..."
+  },
+  "guild": {
+    "header": {
+      "title": "EL SALÓN DEL GREMIO",
+      "subtitle": "Comunidad y Soporte"
+    },
+    "tabs": {
+      "beta": "ACCESO BETA TESTER",
+      "bug": "REPORTAR GLITCHES",
+      "feedback": "SUSURROS DE TABERNA"
+    },
+    "beta": {
+      "fields": {
+        "identity": { "label": "Traveler Identity", "placeholder": "e.g. Oak_Shield" },
+        "discord": { "label": "Discord Raven", "placeholder": "username#0000" },
+        "email": { "label": "Email", "placeholder": "traveler@guild.com" },
+        "steam": { "label": "Steam User", "placeholder": "traveler_id" },
+        "genre": { "label": "Favorite Game Genre" }
+      },
+      "genres": [
+        "Card Battlers & Deckbuilders",
+        "Action RPGs (Genshin Impact, Wuthering Waves)",
+        "MOBAs & Competitive (League of Legends)",
+        "Gacha & RPGs (Guardian Tales, Fates)",
+        "Fighting Games (BlazBlue)"
+      ],
+      "btn": "PLEDGE TO THE ROOTS",
+      "toast": {
+        "success": "Welcome to the Guild! We shall summon you soon.",
+        "error": "The guild registry is closed momentarily. Try again."
+      }
+    },
+    "bug": {
+      "fields": {
+        "summary": { "label": "Resumen de la Podredumbre", "placeholder": "¿Dónde decayó la madera?" },
+        "steps": { "label": "Pasos para Reproducir (Escríbelo con tinta)", "placeholder": "1. Caminar cerca del árbol anciano...\n2. Abrir el pergamino...\n3. ¡Las hojas caen!" },
+        "specs": { "label": "Especificaciones de tu Carreta", "placeholder": "RAM, GPU, Navegador, SO" },
+        "evidence": "Evidencia (Opcional - Máx 1MB)"
+      },
+      "attach_btn": "CLIC PARA ADJUNTAR UN BOCETO",
+      "btn": "ENVIAR AL CUERVO",
+      "btn_loading": "ENVIANDO CUERVO...",
+      "toast": {
+        "invalid_type": "¡Eso no es un boceto! Solo se permiten imágenes.",
+        "too_heavy": "¡Demasiado pesado para el cuervo! El tamaño máximo es 1MB.",
+        "upload_failed": "Fallo al subir el boceto.",
+        "success": "¡Reporte escrito! Nuestros herreros están en ello.",
+        "error": "El cuervo se perdió en la tormenta. Intenta de nuevo."
+      }
+    },
+    "feedback": {
+      "label": "Sabiduría y Visiones de la Taberna",
+      "placeholder": "Comparte tus historias, ideas de características o comentarios para el futuro del bosque...",
+      "btn": "COMPARTIR SABIDURÍA",
+      "toast": {
+        "success": "¡Sabiduría compartida con los ancianos!",
+        "error": "Tu susurro se desvaneció..."
+      }
+    }
+  },
+  "stats": {
+    "loading": "Cargando estadísticas del Reino...",
+    "title": "ESTADÍSTICAS DEL GREMIO",
+    "goals": {
+      "supplies": "Cofres de Suministros (Ko-fi)",
+      "kickstarter": "Campaña Kickstarter (Pre-Lanzamiento)",
+      "testers": "Beta Testers Reclutados",
+      "lore": "Pergaminos de Lore (Comentarios)",
+      "bugs": "Bugs Aplastados"
+    }
+  },
+  "log": {
+    "header": {
+      "title": "BITÁCORA DEL AVENTURERO",
+      "subtitle": "Crónicas del Viaje"
+    },
+    "panel": {
+      "new_title": "NUEVA ENTRADA",
+      "success_title": "VIAJE CONCLUIDO"
+    },
+    "categories": {
+      "concept": "Mitos y Construcción del Mundo",
+      "mechanics": "Combate Táctico",
+      "ui": "Interfaz y Navegación",
+      "art": "Estilo de Arte Pixelado"
+    },
+    "form": {
+      "comment_label": "CUENTOS DEL REINO (OPCIONAL)",
+      "comment_placeholder": "Describe tu viaje, valiente aventurero...",
+      "chars_scribed": "CARACTERES ESCRITOS",
+      "btn_loading": "ESCRIBIENDO...",
+      "btn_submit": "SELLAR LA CRÓNICA"
+    },
+    "success": {
+      "title": "ENTRADA REGISTRADA",
+      "desc": "Tu historia ha sido escrita en las estrellas.",
+      "btn": "ESCRIBIR OTRA ENTRADA"
+    },
+    "toast": {
+      "incomplete": "¡La crónica está incompleta! Todos los aspectos deben ser registrados.",
+      "error": "Tinta derramada... La entrada no se pudo guardar.",
+      "success": "¡Crónica Sellada!"
+    }
+  },
+  "faqs": {
+    "title": "PERGAMINOS DE CONOCIMIENTO",
+    "q1": {
+      "question": "¿Sprite Strikers contendrá arte por IA?",
+      "answer": "No. El producto final de Sprite Strikers no contendrá contenido generado por IA. El arte actual es estrictamente un 'placeholder' (marcador de posición) para dar una idea clara de la dirección visual que buscamos lograr con artistas humanos."
+    },
+    "q2": {
+      "question": "¿Cuándo saldrá Sprite Strikers?",
+      "answer": "El juego se lanzará sin importar qué, pero la calidad final, la cantidad de contenido y la velocidad de desarrollo estarán fuertemente determinadas por el éxito de nuestra campaña de apoyo."
+    },
+    "q3": {
+      "question": "¿Puedo apoyar fuera de Kickstarter?",
+      "answer": "¡Sí! Puedes invitarnos un café (donación directa) a través de nuestra página de Ko-fi aquí: <a href='https://ko-fi.com/spritestrikers' target='_blank' class='text-amber-700 underline hover:text-amber-500'>Nuestra página de Ko-fi</a>."
+    },
+    "q4": {
+      "question": "¿Puedo contribuir de manera no monetaria?",
+      "answer": "¡Claro! Puedes ayudarnos inmensamente compartiendo el proyecto con tus amigos y conocidos, aplicando para ser Beta Tester, o simplemente enviándonos tus comentarios y reseñas a través de nuestros formularios del Gremio."
+    },
+    "q5": {
+      "question": "Soy artista o músico y quiero ofrecer mis servicios, ¿cómo puedo hacerlo?",
+      "answer": "Puedes utilizar el formulario de 'Susurros de Taberna' un poco más arriba, o enviarle un mensaje al cuervo directamente a nuestro correo: <a href='mailto:sprite.strikers@gmail.com' class='text-amber-700 underline hover:text-amber-500'>sprite.strikers@gmail.com</a>."
+    }
   },
   "chronicles": {
     "title": "LAS CRÓNICAS ANTIGUAS",
