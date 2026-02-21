@@ -1,4 +1,4 @@
-import { useGuildStats } from "@/hooks/useGuildStats"; // Importa tu nuevo hook
+import { useGuildStats } from "@/hooks/useGuildStats";
 import { Bug, Coffee, Feather, Flame, Target } from "lucide-react";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
@@ -8,7 +8,6 @@ export const GuildGoals = () => {
   const { t } = useTranslation();
   const { stats, loading } = useGuildStats();
 
-  // Definimos las metas dinámicamente usando los datos del hook
   const goals = [
     { 
       title: t('stats.goals.supplies'), 
@@ -28,21 +27,21 @@ export const GuildGoals = () => {
     { 
       title: t('stats.goals.testers'), 
       current: stats.testers, 
-      total: 100, // Meta fija de testers
+      total: 100,
       icon: <Target className="size-4 text-emerald-500" />,
       color: "#10b981" // Emerald
     },
     { 
       title: t('stats.goals.lore'), 
       current: stats.comments, 
-      total: 50, // Meta de participación
+      total: 50,
       icon: <Feather className="size-4 text-blue-400" />,
       color: "#3b82f6" // Blue
     },
     { 
       title: t('stats.goals.bugs'), 
       current: stats.bugs, 
-      total: 20, // Meta interna de limpieza
+      total: 20,
       icon: <Bug className="size-4 text-purple-500" />,
       color: "#a855f7" // Purple
     },

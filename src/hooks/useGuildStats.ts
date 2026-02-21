@@ -8,7 +8,7 @@ export const useGuildStats = () => {
     pledged: 0,
     bugs: 0,
     comments: 0,
-    kickstarterGoal: 10000,
+    kickstarterGoal: 30000,
     coffeeGoal: 100
   });
   const [loading, setLoading] = useState(true);
@@ -43,7 +43,7 @@ export const useGuildStats = () => {
           comments: comments || 0,
           coffees: externalStats?.kofi_count || 0,
           pledged: externalStats?.kickstarter_pledged || 0,
-          kickstarterGoal: 50000,
+          kickstarterGoal: 300000,
           coffeeGoal: 200
         });
       } catch (error) {
