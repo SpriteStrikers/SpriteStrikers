@@ -80,7 +80,7 @@ export const HeroSection = () => {
             </PixelButton>
           </Link>
 
-          <a href="https://www.kickstarter.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.kickstarter.com/projects/saultoscano/sprite-strikers" target="_blank" rel="noopener noreferrer">
             <PixelButton variant="leaf" size="lg" className="min-w-[280px] text-lg uppercase">
               {t('hero.green_button')}
             </PixelButton>
